@@ -3,6 +3,9 @@
 (require cabin-items
 	 (except-in codespells/lore log))
 
+(define-runtime-path preview-image
+                     "images/preview.png")
+
 (define-rune-collection-lore 
   #:name "Cozy Conjurings"
   #:description 
@@ -26,4 +29,4 @@
       #:rune (cupboard-rune)
       #:description "This rune creates a small cupboard for all the cups you don't own."
       ))
-  #:preview-image (apple-rune))
+  #:preview-image preview-image)
