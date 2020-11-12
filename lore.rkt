@@ -19,11 +19,31 @@
     (rune-lore
       #:name "Armchair"
       #:rune (armchair-rune)
-      #:description "This rune creates an comfortable armchair. No, you can't sit in it."
+      #:description "This rune creates an comfortable armchair."
       )
     (rune-lore
       #:name "Cupboard"
       #:rune (cupboard-rune)
-      #:description "This rune creates a small cupboard for all the cups you don't own."
+      #:description "This rune creates a small cupboard."
+      )
+    (rune-lore
+      #:name "Barrel"
+      #:rune (barrel-rune)
+      #:description "This rune creates a large wooden barrel."
+      )
+    (rune-lore
+      #:name "Bed"
+      #:rune (bed-rune)
+      #:description "This rune creates a rustic bed."
+      )
+    (rune-lore
+      #:name "Lantern"
+      #:rune (lantern-rune)
+      #:description "This rune creates a small lantern."
+      )
+    (rune-lore
+      #:name "Log"
+      #:rune (log-rune)
+      #:description "This rune creates a small, rectangular log."
       ))
   #:preview-image (apple-rune))
