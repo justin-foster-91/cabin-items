@@ -10,7 +10,9 @@
   #:name "Cozy Conjurings"
   #:description 
   @md{
-      The @b{Cozy Conjurings} Rune Collection contains log cabin items.
+  The @b{Cozy Conjurings} Rune Collection was crafted by @b{Shea the Enchantress} during the @b{First Epoch}. Shea spent many moons consumed in the process of perfecting the most comfortable interior settings for her day-to-day enchanting. After her untimely death, the Rune Collection was preserved in perpetuity by her two sons, who built the @b{ Log Cabin of Wishfern}, which still stands to this day.
+
+  The original Collection is housed at the @b{College of Runic Studies}. These are my notes: 
   }
   #:rune-lores
   (list
