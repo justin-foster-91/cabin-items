@@ -3,9 +3,6 @@
 (require cabin-items
 	 (except-in codespells/lore log))
 
-(define-runtime-path preview-image
-                     "images/preview.png")
-
 (define-rune-collection-lore 
   #:name "Cozy Conjurings"
   #:description 
@@ -51,4 +48,4 @@
       #:rune (log-rune)
       #:description "This rune creates a small, rectangular log."
       ))
-  #:preview-image preview-image)
+  #:preview-image preview.png)
