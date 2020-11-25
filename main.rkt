@@ -43,15 +43,20 @@
   #:foreground (bitmap/url "https://static.thenounproject.com/png/1820156-200.png")
   (spawn-mod-blueprint pak-folder mod-name "Woodlog"))
 
+(define-classic-rune (cabinet)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/179220-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "Cabinet"))
+
 (define-classic-rune-lang my-mod-lang #:eval-from main.rkt
-  (double apple armchair cupboard barrel bed lantern log ))
+  (double apple armchair cupboard barrel bed lantern log cabinet))
 
 (module+ main
   (codespells-workspace ;TODO: Change this to your local workspace if different
    (build-path (current-directory) ".."))
   
   (once-upon-a-time
-   #:world (voxel-world)
+   #:world (arena-world)
    #:aether (demo-aether
              #:lang (my-mod-lang #:with-paren-runes? #t))))
 
