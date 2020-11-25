@@ -48,15 +48,61 @@
   #:foreground (bitmap/url "https://static.thenounproject.com/png/179220-200.png")
   (spawn-mod-blueprint pak-folder mod-name "Cabinet"))
 
+(define-classic-rune (basket)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/3612053-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "Basket"))
+
+(define-classic-rune (baby_chair)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/3562048-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "BabyChair"))
+
+(define-classic-rune (bagel)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/18154-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "Bagel"))
+
+(define-classic-rune (basin)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/2120849-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "Basin"))
+
+(define-classic-rune (broom)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/3613801-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "Broom"))
+
+(define-classic-rune (coffee_pot)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/1085650-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "CoffeePot"))
+
+(define-classic-rune (crate)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/1661576-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "Crate"))
+
+(define-classic-rune (table)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/59987-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "Table"))
+
+(define-classic-rune (vase)
+  #:background "blue"
+  #:foreground (bitmap/url "https://static.thenounproject.com/png/395404-200.png")
+  (spawn-mod-blueprint pak-folder mod-name "Vase"))
+
+
 (define-classic-rune-lang my-mod-lang #:eval-from main.rkt
-  (double apple armchair cupboard barrel bed lantern log cabinet))
+  (double apple armchair cupboard barrel bed lantern log cabinet basket baby_chair bagel basin broom coffee_pot crate table vase))
 
 (module+ main
   (codespells-workspace ;TODO: Change this to your local workspace if different
    (build-path (current-directory) ".."))
   
   (once-upon-a-time
-   #:world (arena-world)
+   #:world (voxel-world)
    #:aether (demo-aether
              #:lang (my-mod-lang #:with-paren-runes? #t))))
 
