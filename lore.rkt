@@ -10,6 +10,9 @@
 (require-mod ice-particles)
 (require-mod rocks)
 
+(define-runtime-path preview-image
+                     "images/preview.png")
+
 (define-rune-collection-lore 
   #:name "Cozy Conjurings"
   #:description 
@@ -55,4 +58,54 @@
       #:rune (log-rune)
       #:description "This rune creates a small, rectangular log."
       ))
-  #:preview-image preview.png)
+    (rune-lore
+      #:name "Cabinet"
+      #:rune (cabinet-rune)
+      #:description "This rune creates a cabinet."
+      )
+    (rune-lore
+      #:name "Basket"
+      #:rune (basket-rune)
+      #:description "This rune creates a basket."
+      )
+    (rune-lore
+      #:name "BabyChair"
+      #:rune (baby-chair-rune)
+      #:description "This rune creates child-sized chair."
+      )
+    (rune-lore
+      #:name "Bagel"
+      #:rune (bagel-rune)
+      #:description "This rune creates a bagel."
+      )
+    (rune-lore
+      #:name "Basin"
+      #:rune (basin-rune)
+      #:description "This rune creates a metal basin."
+      )
+    (rune-lore
+      #:name "Broom"
+      #:rune (broom-rune)
+      #:description "This rune creates a broom."
+      )
+    (rune-lore
+      #:name "CoffeePot"
+      #:rune (coffee-pot-rune)
+      #:description "This rune creates a coffee pot."
+      )
+    (rune-lore
+      #:name "Crate"
+      #:rune (crate-rune)
+      #:description "This rune creates a wooden crate."
+      )
+    (rune-lore
+      #:name "Table"
+      #:rune (table-rune)
+      #:description "This rune creates a cabin table."
+      )
+    (rune-lore
+      #:name "Vase"
+      #:rune (vase-rune)
+      #:description "This rune creates a vase."
+      )
+  #:preview-image preview-image)
