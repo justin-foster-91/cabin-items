@@ -1,7 +1,14 @@
 #lang at-exp racket
 
 (require cabin-items
-	 (except-in codespells/lore log))
+	 (except-in codespells/lore log)
+         (only-in codespells append-rune-langs
+                             require-mod))
+
+(require-mod hierarchy)
+(require-mod fire-particles)
+(require-mod ice-particles)
+(require-mod rocks)
 
 (define-rune-collection-lore 
   #:name "Cozy Conjurings"
