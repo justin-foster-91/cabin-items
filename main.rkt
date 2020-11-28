@@ -99,10 +99,10 @@
 
 (module+ main
   (codespells-workspace ;TODO: Change this to your local workspace if different
-   (build-path (current-directory) ".."))
+   (build-path (current-directory) ".." ".." ".." "CodeSpellsWorkspace"))
   
   (once-upon-a-time
-   #:world (voxel-world)
+   #:world (log-cabin-world)
    #:aether (demo-aether
              #:lang (my-mod-lang #:with-paren-runes? #t))))
 
