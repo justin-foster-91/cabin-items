@@ -53,7 +53,7 @@
   #:foreground (bitmap/url "https://static.thenounproject.com/png/3612053-200.png")
   (spawn-mod-blueprint pak-folder mod-name "Basket"))
 
-(define-classic-rune (baby_chair)
+(define-classic-rune (baby-chair)
   #:background "blue"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/3562048-200.png")
   (spawn-mod-blueprint pak-folder mod-name "BabyChair"))
@@ -73,7 +73,7 @@
   #:foreground (bitmap/url "https://static.thenounproject.com/png/3613801-200.png")
   (spawn-mod-blueprint pak-folder mod-name "Broom"))
 
-(define-classic-rune (coffee_pot)
+(define-classic-rune (coffee-pot)
   #:background "blue"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/1085650-200.png")
   (spawn-mod-blueprint pak-folder mod-name "CoffeePot"))
@@ -95,7 +95,7 @@
 
 
 (define-classic-rune-lang my-mod-lang #:eval-from main.rkt
-  (double apple armchair cupboard barrel bed lantern log cabinet basket baby_chair bagel basin broom coffee_pot crate table vase))
+  (double apple armchair cupboard barrel bed lantern log cabinet basket baby-chair bagel basin broom coffee-pot crate table vase))
 
 (module+ main
   (codespells-workspace ;TODO: Change this to your local workspace if different
