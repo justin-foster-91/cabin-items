@@ -67,8 +67,13 @@
   #:foreground (bitmap/url "https://static.thenounproject.com/png/3613801-200.png")
   (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Broom")))
 
+<<<<<<< HEAD
 (define-classic-rune (coffee_pot)
   #:background "red"
+=======
+(define-classic-rune (coffee-pot)
+  #:background "blue"
+>>>>>>> d0fb530e3d2936bc73b24f7fa1e0249bdcbf60fe
   #:foreground (bitmap/url "https://static.thenounproject.com/png/1085650-200.png")
   (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "CoffeePot")))
 
@@ -89,7 +94,11 @@
 
 
 (define-classic-rune-lang my-mod-lang #:eval-from main.rkt
+<<<<<<< HEAD
   (apple armchair cupboard barrel bed lantern log cabinet basket baby_chair bagel basin broom coffee_pot crate table vase))
+=======
+  (double apple armchair cupboard barrel bed lantern log cabinet basket baby-chair bagel basin broom coffee-pot crate table vase))
+>>>>>>> d0fb530e3d2936bc73b24f7fa1e0249bdcbf60fe
 
 (module+ main
   (codespells-workspace ;TODO: Change this to your local workspace if different
