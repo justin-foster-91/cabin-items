@@ -2,100 +2,94 @@
 
 (require cabin-items/mod-info)
 
-(define-classic-rune (double a)
-  #:background "blue"
-  #:foreground (circle 40 'outline 'red)
-  @unreal-js{@(a)
-             @(a)})
-
 (define-classic-rune (apple)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/2536010-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Apple"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Apple")))
 
 (define-classic-rune (armchair)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/2560057-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Armchair"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Armchair")))
 
 (define-classic-rune (cupboard)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/1520935-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Cupboard"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Cupboard")))
 
 (define-classic-rune (barrel)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/2385458-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Barrel"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Barrel")))
 
 (define-classic-rune (bed)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/3521265-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Bed"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Bed")))
 
 (define-classic-rune (lantern)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/2454597-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Lantern"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Lantern")))
 
 (define-classic-rune (log)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/1820156-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Woodlog"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Woodlog")))
 
 (define-classic-rune (cabinet)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/179220-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Cabinet"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Cabinet")))
 
 (define-classic-rune (basket)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/3612053-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Basket"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Basket")))
 
 (define-classic-rune (baby_chair)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/3562048-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "BabyChair"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "BabyChair")))
 
 (define-classic-rune (bagel)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/18154-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Bagel"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Bagel")))
 
 (define-classic-rune (basin)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/2120849-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Basin"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Basin")))
 
 (define-classic-rune (broom)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/3613801-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Broom"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Broom")))
 
 (define-classic-rune (coffee_pot)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/1085650-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "CoffeePot"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "CoffeePot")))
 
 (define-classic-rune (crate)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/1661576-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Crate"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Crate")))
 
 (define-classic-rune (table)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/59987-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Table"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Table")))
 
 (define-classic-rune (vase)
-  #:background "blue"
+  #:background "red"
   #:foreground (bitmap/url "https://static.thenounproject.com/png/395404-200.png")
-  (spawn-mod-blueprint pak-folder mod-name "Vase"))
+  (with-scale 2 (spawn-mod-blueprint pak-folder mod-name "Vase")))
 
 
 (define-classic-rune-lang my-mod-lang #:eval-from main.rkt
-  (double apple armchair cupboard barrel bed lantern log cabinet basket baby_chair bagel basin broom coffee_pot crate table vase))
+  (apple armchair cupboard barrel bed lantern log cabinet basket baby_chair bagel basin broom coffee_pot crate table vase))
 
 (module+ main
   (codespells-workspace ;TODO: Change this to your local workspace if different
